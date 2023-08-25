@@ -1,0 +1,10 @@
+﻿  source.cpp
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_AddZmena_TC12\TPV_AddZmena_TC12\source.cpp(170,11): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 2 má typ size_t.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_AddZmena_TC12\TPV_AddZmena_TC12\source.cpp(170,11): message : Zvažte použití %zd ve formátovacím řetězci.
+     Vytváří se knihovna C:\Users\jhrdi\Desktop\Pos_TC12\TPV_AddZmena_TC12\x64\Release\TPV_AddZmena_TC12.lib a objekt C:\Users\jhrdi\Desktop\Pos_TC12\TPV_AddZmena_TC12\x64\Release\TPV_AddZmena_TC12.exp.
+  Vytváří se kód.
+  3 of 77 functions ( 3.9%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Vytváření kódu se dokončilo.
+  TPV_AddZmena_TC12.vcxproj -> C:\Users\jhrdi\Desktop\Pos_TC12\TPV_AddZmena_TC12\x64\Release\TPV_AddZmena_TC12.dll
