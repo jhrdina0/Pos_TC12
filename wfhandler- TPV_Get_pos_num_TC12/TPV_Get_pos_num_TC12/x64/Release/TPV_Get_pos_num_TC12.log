@@ -1,0 +1,11 @@
+﻿  Source.cpp
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Get_pos_num_TC12\TPV_Get_pos_num_TC12\Source.cpp(125,8): warning C4101: fr: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Get_pos_num_TC12\TPV_Get_pos_num_TC12\Source.cpp(354,9): warning C4101: folder: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Get_pos_num_TC12\TPV_Get_pos_num_TC12\Source.cpp(356,9): warning C4101: Lov: neodkazovaná lokální proměnná
+     Vytváří se knihovna C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Get_pos_num_TC12\x64\Release\TPV_Get_pos_num_TC12.lib a objekt C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Get_pos_num_TC12\x64\Release\TPV_Get_pos_num_TC12.exp.
+  Vytváří se kód.
+  2 of 86 functions ( 2.3%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Vytváření kódu se dokončilo.
+  TPV_Get_pos_num_TC12.vcxproj -> C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Get_pos_num_TC12\x64\Release\TPV_Get_pos_num_TC12.dll

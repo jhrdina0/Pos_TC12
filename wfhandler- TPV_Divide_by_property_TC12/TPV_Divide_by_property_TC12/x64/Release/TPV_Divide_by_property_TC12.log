@@ -1,0 +1,15 @@
+﻿  source.cpp
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\TPV_Divide_by_property_TC12\source.cpp(54,11): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 3 má typ tag_t *.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\TPV_Divide_by_property_TC12\source.cpp(54,11): warning C4313: printf: %d ve formátovacím řetězci je v konfliktu s argumentem 3 typu tag_t *
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\TPV_Divide_by_property_TC12\source.cpp(184,12): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 1 má typ size_t.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\TPV_Divide_by_property_TC12\source.cpp(184,12): message : Zvažte použití %zd ve formátovacím řetězci.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\TPV_Divide_by_property_TC12\source.cpp(187,12): warning C4553: ==: Výsledek výrazu se nepoužívá; nebylo vaším záměrem =?
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\TPV_Divide_by_property_TC12\source.cpp(203,12): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 1 má typ size_t.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\TPV_Divide_by_property_TC12\source.cpp(203,12): message : Zvažte použití %zd ve formátovacím řetězci.
+     Vytváří se knihovna C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\x64\Release\TPV_Divide_by_property_TC12.lib a objekt C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\x64\Release\TPV_Divide_by_property_TC12.exp.
+  Vytváří se kód.
+  2 of 7 functions (28.6%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Vytváření kódu se dokončilo.
+  TPV_Divide_by_property_TC12.vcxproj -> C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Divide_by_property_TC12\x64\Release\TPV_Divide_by_property_TC12.dll
