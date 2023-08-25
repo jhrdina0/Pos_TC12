@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33717.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TPV_Targets2Refs_TC12", "TPV_Targets2Refs_TC12\TPV_Targets2Refs_TC12.vcxproj", "{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Debug|x64.ActiveCfg = Debug|x64
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Debug|x64.Build.0 = Debug|x64
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Debug|x86.ActiveCfg = Debug|Win32
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Debug|x86.Build.0 = Debug|Win32
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Release|x64.ActiveCfg = Release|x64
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Release|x64.Build.0 = Release|x64
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Release|x86.ActiveCfg = Release|Win32
+		{3FC0CE4A-8B53-4DF2-B9C7-2FBED56CEE7F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D384053-B523-4EA7-AC21-D3CD2AADE273}
+	EndGlobalSection
+EndGlobal
