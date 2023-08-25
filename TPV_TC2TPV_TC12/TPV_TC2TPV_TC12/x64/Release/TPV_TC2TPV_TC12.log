@@ -1,0 +1,23 @@
+﻿  source.cpp
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(358,19): warning C4477: sprintf: Formátovací řetězec %s vyžaduje argument typu char *, ale variadický argument 1 má typ int.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(358,19): warning C4313: sprintf: %s ve formátovacím řetězci je v konfliktu s argumentem 1 typu int
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(359,10): warning C4477: printf: Formátovací řetězec %s vyžaduje argument typu char *, ale variadický argument 2 má typ char **.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(368,19): warning C4477: sprintf: Formátovací řetězec %s vyžaduje argument typu char *, ale variadický argument 1 má typ double.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(369,10): warning C4477: printf: Formátovací řetězec %s vyžaduje argument typu char *, ale variadický argument 2 má typ char **.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(418,13): warning C4267: inicializování: Převod z: size_t na: int, může dojít ke ztrátě dat.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(450,11): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 1 má typ size_t.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(450,11): message : Zvažte použití %zd ve formátovacím řetězci.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(485,5): warning C4101: ID_Rev: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(816,1): warning C4102: prazdny: neodkazovaná jmenovka
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(775,8): warning C4101: nazev_klice: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(829,8): warning C4101: poznamka: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(1091,1): warning C4102: prazdny_radek: neodkazovaná jmenovka
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(1247,9): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 1 má typ FILE *.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\TPV_TC2TPV_TC12\source.cpp(1247,9): warning C4313: printf: %d ve formátovacím řetězci je v konfliktu s argumentem 1 typu FILE *
+     Vytváří se knihovna C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\x64\Release\TPV_TC2TPV_TC12.lib a objekt C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\x64\Release\TPV_TC2TPV_TC12.exp.
+  Vytváří se kód.
+  8 of 34 functions (23.5%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Vytváření kódu se dokončilo.
+  TPV_TC2TPV_TC12.vcxproj -> C:\Users\jhrdi\Desktop\Pos_TC12\TPV_TC2TPV_TC12\x64\Release\TPV_TC2TPV_TC12.dll

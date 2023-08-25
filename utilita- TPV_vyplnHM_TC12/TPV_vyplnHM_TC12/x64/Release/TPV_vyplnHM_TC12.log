@@ -1,0 +1,14 @@
+﻿  source.cpp
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(79,9): warning C4477: printf: Formátovací řetězec %s vyžaduje argument typu char *, ale variadický argument 1 má typ std::string.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(136,5): warning C4101: folder: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(182,5): warning C4101: folder: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(209,5): warning C4101: folde: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(235,5): warning C4101: folder: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(260,5): warning C4101: c_nak_pol: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(279,10): warning C4101: stav: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\TPV_vyplnHM_TC12\source.cpp(677,1): warning C4102: end: neodkazovaná jmenovka
+  Vytváří se kód.
+  Previous IPDB not found, fall back to full compilation.
+  All 77 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Vytváření kódu se dokončilo.
+  TPV_vyplnHM_TC12.vcxproj -> C:\Users\jhrdi\Desktop\Pos_TC12\TPV_vyplnHM_TC12\x64\Release\TPV_vyplnHM_TC12.exe

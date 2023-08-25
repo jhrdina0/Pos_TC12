@@ -1,0 +1,25 @@
+﻿  source.cpp
+C:\Users\jhrdi\Desktop\tc12\include\Error_Exception.hxx(300,33): warning C4251: UGS::Error::Exception::m_sFileName: class std::basic_string<char,std::char_traits<char>,std::allocator<char>> potřebuje třídu dll-interface, ať se dá používat klienty class UGS::Error::Exception.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(5155,29): message : viz deklarace: std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+C:\Users\jhrdi\Desktop\tc12\include\Error_Exception.hxx(307,33): warning C4251: UGS::Error::Exception::m_sSyslogText: class std::basic_string<char,std::char_traits<char>,std::allocator<char>> potřebuje třídu dll-interface, ať se dá používat klienty class UGS::Error::Exception.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(5155,29): message : viz deklarace: std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(78,9): warning C4101: rootLine: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(231,11): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 3 má typ tag_t *.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(231,11): warning C4313: printf: %d ve formátovacím řetězci je v konfliktu s argumentem 3 typu tag_t *
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(295,3): warning C4101: Rev: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(319,5): warning C4101: c_nak_pol: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(338,10): warning C4101: stav: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(505,9): warning C4101: folder: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(507,9): warning C4101: Lov: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(583,9): warning C4477: printf: Formátovací řetězec %d vyžaduje argument typu int, ale variadický argument 2 má typ tag_t *.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(583,9): warning C4313: printf: %d ve formátovacím řetězci je v konfliktu s argumentem 2 typu tag_t *
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(583,9): warning C4477: printf: Formátovací řetězec %s vyžaduje argument typu char *, ale variadický argument 4 má typ const char **.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(583,9): warning C4477: printf: Formátovací řetězec %s vyžaduje argument typu char *, ale variadický argument 5 má typ const char **.
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(595,9): warning C4101: tagy: neodkazovaná lokální proměnná
+C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\TPV_Vypln_HM_NP_TC12\source.cpp(621,9): warning C4101: tagy: neodkazovaná lokální proměnná
+     Vytváří se knihovna C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\x64\Release\TPV_Vypln_HM_NP_TC12.lib a objekt C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\x64\Release\TPV_Vypln_HM_NP_TC12.exp.
+  Vytváří se kód.
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 12 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Vytváření kódu se dokončilo.
+  TPV_Vypln_HM_NP_TC12.vcxproj -> C:\Users\jhrdi\Desktop\Pos_TC12\TPV_Vypln_HM_NP_TC12\x64\Release\TPV_Vypln_HM_NP_TC12.dll
