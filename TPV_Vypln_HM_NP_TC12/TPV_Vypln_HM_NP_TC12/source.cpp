@@ -6,7 +6,6 @@
 #include <ict/ict_userservice.h>
 #include <tc/tc.h>
 #include <user_exits/user_exits.h>
-#include <tc/tc.h>
 #include <tccore/item.h>
 #include <tccore/aom_prop.h>
 #include <ps/ps.h>
@@ -35,24 +34,10 @@ int TPV_Vypln_HM_NP(EPM_action_message_t msg);
 EPM_decision_t A_TPV_Vypln_HM_NP(EPM_rule_message_t msg);
 void ListBomLine(tag_t BomLine, int Level, tag_t RootTask, tag_t BomWindow, char* user_name);
 void AddToTarget(tag_t RootTask, char* O_Name, tag_t Item);
-void MoveTPToFolder(tag_t folder, tag_t object);
-void removeTP(tag_t folder, tag_t object);
-void SetBomLineString(tag_t BomWin, tag_t BomLine, char* value, char* Attr);
-void Add_S_ToTP(char* povrch1, char* povrch2, char* povrch3, tag_t TPrev, tag_t TP);
-int Existence(char* povrch1, char* povrch2, char* povrch3, char* stredisko, char* poznamka, char* id, char* rev, char* var, tag_t BomLine, int AttributeId, tag_t BomWindow, tag_t revDil);
 void VyplnLov(char* hodnota, tag_t cil, char* Lov, char* attr);
 int kontrolaLov(char* vstup, char* Lov, char* Zlovu);
 void CopyAttr_HM(tag_t Rev, tag_t RootTask, char* c_h_mat);
 void CopyAttr_NP(tag_t Rev, tag_t RootTask, char* c_nak_pol);
-
-
-extern "C" DLLAPI int TPV_Vypln_HM_NP_TC12_register_callbacks()
-{
-	printf("Registruji handler-TPV_Vypln_HM_NP_TC12.dll\n");
-	CUSTOM_register_exit("TPV_Vypln_HM_NP_TC12", "USER_init_module", TPV_Vypln_HM_NP_TC12_init_module);
-
-	return ITK_ok;
-}
 
 extern "C" DLLAPI int TPV_Vypln_HM_NP_TC12_init_module(int* decision, va_list args)
 {
@@ -65,6 +50,15 @@ extern "C" DLLAPI int TPV_Vypln_HM_NP_TC12_init_module(int* decision, va_list ar
 
 	return ITK_ok;
 }
+
+extern "C" DLLAPI int TPV_Vypln_HM_NP_TC12_register_callbacks()
+{
+	printf("Registruji TPV_Vypln_HM_NP_TC12.dll\n");
+	CUSTOM_register_exit("TPV_Vypln_HM_NP_TC12", "USER_init_module", TPV_Vypln_HM_NP_TC12_init_module);
+
+	return ITK_ok;
+}
+
 bool cad;
 
 int TPV_Vypln_HM_NP(EPM_action_message_t msg)
@@ -76,13 +70,18 @@ int TPV_Vypln_HM_NP(EPM_action_message_t msg)
 	int TargetsCount = 0;
 	tag_t* Targets;
 	tag_t* rootLine;
-	tag_t TargetClassTag;
-	tag_t user_tag;
-	char* user_name;
+	tag_t TargetClassTag = NULLTAG;
 	char* Argument = nullptr;
 	char* Flag = nullptr;
 	char* Value = nullptr;
 	cad = false;
+
+	char* user_name;
+
+	const char* user_name_str = "infodba";
+
+	// Allocate memory for user_name and copy the string
+	user_name = _strdup(user_name_str);
 
 
 	strcpy(error, "\0");
@@ -133,7 +132,7 @@ int TPV_Vypln_HM_NP(EPM_action_message_t msg)
 
 			// Výpis BOM line 
 			BOM_set_window_top_line(BomWindow, NULLTAG, Targets[i], Boms[j], &BomTopLine);
-			POM_get_user(&user_name, &user_tag);
+
 			//nastaveni context bomline absolute occurrence edit mode			
 			BOM_window_set_absocc_edit_mode(BomWindow, TRUE);
 			ListBomLine(BomTopLine, 0, RootTask, BomWindow, user_name);
@@ -228,7 +227,7 @@ void AddToRef(tag_t RootTask, tag_t* Object, int num, tag_t puvodni)
 		const int AttachmentTypes[1] = { EPM_reference_attachment };
 		if (puvodni != Object[i])
 		{
-			printf("Pridej do reference rt %d num %d obj %d AT %d \n", RootTask, num, &Object[i], AttachmentTypes[0]);
+			//printf("Pridej do reference rt %d num %d obj %d AT %d \n", RootTask, num, &Object[i], AttachmentTypes[0]);
 			EPM_add_attachments(RootTask, 1, &Object[i], AttachmentTypes);
 			printf("Pridano \n");
 		}
@@ -270,29 +269,28 @@ int CountInRelation(tag_t Otec, char* Relation)
 
 	return Count;
 }
-void SetInt(tag_t object, int value, const char* prop)
+void SetInt(tag_t object, int value, std::string prop)
 {
 	AOM_lock(object);
-	AOM_set_value_int(object, prop, value);
+	AOM_set_value_int(object, prop.c_str(), value);
+	AOM_save(object);
+	AOM_unlock(object);
+	//AOM_unload(object);
+	printf("Vlozeno\n");
+}
+void SetString(tag_t object,const char* value, std::string prop)
+{
+	AOM_lock(object);
+	AOM_set_value_string(object, prop.c_str(), value);
 	AOM_save(object);
 	AOM_unlock(object);
 	//AOM_unload(object);
 	printf("Vlozeno\n");
 }
 
-void SetString(tag_t object, const char* value, const char* prop)
-{
-	AOM_lock(object);
-	AOM_set_value_string(object, prop, value);
-	AOM_save(object);
-	AOM_unlock(object);
-	//AOM_unload(object);
-	printf("Vlozeno\n");
-}
 int getTagRev(char* id_obj)
 {
-	tag_t Item,
-		Rev;
+	tag_t Item;
 
 	//					tag_t query = NULLTAG,
 	//			* folder=NULLTAG;
@@ -316,7 +314,6 @@ int getTagRev(char* id_obj)
 void CopyAttr_HM(tag_t Rev, tag_t RootTask, char* c_h_mat)
 {
 	char
-		* c_nak_pol,
 		* c_poznamka,
 		* c_material,
 		* c_nomenklatura,
@@ -335,7 +332,6 @@ void CopyAttr_HM(tag_t Rev, tag_t RootTask, char* c_h_mat)
 		if (tag_hm != 0)
 		{
 			//printf("257 \n");
-			char* stav;
 			I_hm = tag_hm;
 			/*	AOM_ask_value_string(I_hm,"tpv4_stav_polozky",&stav);
 				if (strcmp(stav,"Zakaz pouziti")==0)
@@ -502,11 +498,7 @@ void ListBomLine(tag_t BomLine, int Level, tag_t RootTask, tag_t BomWindow, char
 	BOM_line_look_up_attribute("bl_revision", &AttributeId);
 	BOM_line_ask_attribute_tag(BomLine, AttributeId, &Rev);
 
-	tag_t* folder;
 	tag_t Item;
-	tag_t* Lov;
-
-
 	char *Id,
 		*RevId,
 		* Type;
@@ -580,7 +572,7 @@ void AddToTarget(tag_t RootTask, char* O_Name, tag_t Item)
 	FL_user_update_newstuff_folder(Item);
 
 	ITEM_find_items_by_key_attributes(1, AttrNames, AttrValues, &Count, &Object);
-	printf("nalezen object %s s tagem %d a poctem objectu %d AttrValues %s AttrName %s \n", O_Name, Object, Count, AttrValues, AttrNames);
+	// printf("nalezen object %s s tagem %d a poctem objectu %d AttrValues %s AttrName %s \n", O_Name, Object, Count, AttrValues, AttrNames);
 	EPM_add_attachments(RootTask, Count, Object, AttachmentTypes);
 	printf("nakonci ciklu\n");
 }
@@ -592,7 +584,6 @@ void VyplnLov(char* hodnota, tag_t cil, char* Lov, char* attr)
 	int n_lovs;
 	int n_values;
 	char** values;
-	tag_t* tagy;
 	LOV_usage_t usage;
 	char** values_dissplay;
 
@@ -618,7 +609,6 @@ int kontrolaLov(char* vstup, char* Lov, char* Zlovu)
 	int n_lovs;
 	int n_values;
 	char** values;
-	tag_t* tagy;
 	LOV_usage_t usage;
 	char** values_dissplay;
 
